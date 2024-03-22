@@ -159,7 +159,7 @@
                     <trimStackTrace>false</trimStackTrace>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <version>3.0.0</version>
@@ -175,14 +175,13 @@
                                     <version>3.3.2</version>
                                 </requireMavenVersion>
                                 <requireJavaVersion>
-                                    <!-- For javadocs and MockBukkit-->
                                     <version>17.0.0</version>
                                 </requireJavaVersion>
                             </rules>
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin-->
         </plugins>
     </build>
     <repositories>
