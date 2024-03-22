@@ -49,7 +49,7 @@ final class BlockDataListener implements Listener {
 
     public BlockDataListener(Plugin plugin) {
         this.plugin = plugin;
-        this.customDataPredicate = block -> CustomBlockData.hasCustomBlockData(block, plugin);
+        this.customDataPredicate = block -> block != null && CustomBlockData.hasCustomBlockData(block, plugin);
     }
 
     private CustomBlockData getCbd(BlockEvent event) {
